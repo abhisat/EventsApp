@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  db:
+    image: "postgres"
+    container_name: "event_app_database"
+    ports:
+      - "54320:5432"
+    volumes:
+      - dbdata:/db
+    environment:
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=abs
+      - POSTGRES_DB=event_app-db
+      - PGDATA=/db
+volumes:
+  dbdata:

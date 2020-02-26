@@ -1,0 +1,43 @@
+Arguments: 
+  /usr/local/Cellar/node/12.11.1/bin/node /usr/local/bin/yarn add apollo-server apollo-server-graphql
+
+PATH: 
+  /Users/abs/.rvm/gems/ruby-2.5.1/bin:/Users/abs/.rvm/gems/ruby-2.5.1@global/bin:/Users/abs/.rvm/rubies/ruby-2.5.1/bin:/Users/abs/.cargo/bin:/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/abs/Library/Android/sdk:/usr/local/go/bin:/Library/TeX/texbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/abs/.rvm/bin
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  12.11.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/apollo-server-graphql: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66975:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140727:22)
+      at Request.emit (events.js:210:5)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141699:10)
+      at Request.emit (events.js:210:5)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141621:12)
+      at Object.onceWrapper (events.js:299:28)
+      at IncomingMessage.emit (events.js:215:7)
+      at endReadableNT (_stream_readable.js:1183:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "EventsAppServer",
+    "version": "1.0.0",
+    "description": "Backend to create/manage the events in the app.",
+    "main": "index.js",
+    "author": "Abhishek Satpathy",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
