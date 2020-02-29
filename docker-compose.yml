@@ -10,7 +10,7 @@ services:
     environment:
       - POSTGRES_PASSWORD=admin
       - POSTGRES_USER=abs
-      - POSTGRES_DB=event_app-db
+      - POSTGRES_DB=event_app_db
       - PGDATA=/db
 volumes:
   dbdata:
