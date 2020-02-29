@@ -1,7 +1,7 @@
 import Sequelize from "sequelize";
 const sequelize = new Sequelize("event_app-db", "abs", "admin", {
-  host: "0.0.0.0",
-  port: "54320",
+  host: "db",
+  port: "5432",
   dialect: "postgres"
 });
 

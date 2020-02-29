@@ -1,5 +1,31 @@
 version: "3.7"
 services:
+  event_app_client:
+    container_name: event_app_client
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    volumes:
+      - ".:/client"
+    depends_on:
+      - event_app_server
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=development
+      - REACT_APP_BASE_URL=https://flickr.com/services/feeds/photos_public.gne
+      - REACT_APP_CORS_SERVER=http://localhost:8081/
+  event_app_server:
+    container_name: event_app_server
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    volumes:
+      - ".:/server"
+    depends_on:
+      - db
+    ports:
+      - 8001:8000
   db:
     image: "postgres"
     container_name: "event_app_database"
